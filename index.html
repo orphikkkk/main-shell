@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PM/Engineer Portfolio | KTM</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#E89259",
+                        "background-dark": "#0E0C0A",
+                        "surface": "#141210",
+                        "raised": "#1A1612",
+                        "text-primary": "#F7F3EE",
+                        "text-secondary": "#C4B8AE",
+                        "text-muted": "#8A7A6E",
+                        "border-default": "#2C2620",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "1rem"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Space Grotesk", sans-serif;
+            min-height: 100vh;
+            scroll-behavior: smooth;
+            background-color: #0E0C0A;
+        }
+        .grain-overlay {
+            background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDUIKc4OEnD3Kqruws6K49dNKILQOrCQzKTxMMtlgRvIaiPgPa6BLuL3By7fORS5QowbMrUgmkDoCiWYgkKSHdHVk9XCscy1Q5Ktei1q1A86tG3BTcSdah9bspKjFPPH36qovA3WzZOKpqslhdNA8dH551L1Rrw_WhE3afV-aX-vP8JHJI_c_BB1_SvHsLBA-IGiTp3CZNcFJE_qIp3heAchPruv8cfiPPvxYwnndWJzMOSl_ImxOPjpw2j7aOLMI9hdWhtgNdUJlA);
+            opacity: 0.05;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+<body class="bg-background-dark text-text-secondary antialiased selection:bg-primary selection:text-background-dark overflow-x-hidden">
+<div class="fixed inset-0 grain-overlay pointer-events-none z-50"></div>
+<!-- Top Navigation -->
+<header class="sticky top-0 z-40 w-full bg-background-dark/80 backdrop-blur-md border-b border-border-default">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<div class="flex items-center gap-8">
+<div class="flex flex-col">
+<span class="text-[10px] font-bold tracking-[0.3em] text-primary uppercase leading-none mb-1">KTM // NEPAL</span>
+<h1 class="text-sm font-bold tracking-tight text-text-primary">BIRENDRA . PM/ENG</h1>
+</div>
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-xs font-bold tracking-widest uppercase text-text-muted hover:text-text-primary transition-colors" href="#">Operations</a>
+<a class="text-xs font-bold tracking-widest uppercase text-text-muted hover:text-text-primary transition-colors" href="#">Tech Stack</a>
+<a class="text-xs font-bold tracking-widest uppercase text-text-muted hover:text-text-primary transition-colors" href="#dossier">Dossier</a>
+<a class="text-xs font-bold tracking-widest uppercase text-text-muted hover:text-text-primary transition-colors" href="#mission-logs">Mission Logs</a>
+<a class="text-xs font-bold tracking-widest uppercase text-primary border-b-2 border-primary pb-1" href="#mission-briefing">Contact</a>
+</nav>
+</div>
+<button class="w-10 h-10 flex items-center justify-center rounded-lg bg-surface border border-border-default hover:border-primary transition-colors group">
+<span class="material-symbols-outlined text-primary group-hover:scale-110 transition-transform">fingerprint</span>
+</button>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 py-12">
+<div class="bento-grid">
+<!-- Hero Section -->
+<section class="col-span-12 lg:col-span-8 flex flex-col justify-center">
+<div class="max-w-2xl">
+<span class="text-[10px] font-bold tracking-[0.4em] text-primary uppercase block mb-6">Status: Active // Level 1 Clearance</span>
+<h2 class="text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-8 text-text-primary uppercase">
+                        I build things that work—<span class="text-primary">products</span>, <span class="text-primary">processes</span>, and <span class="text-primary">teams</span>.
+                    </h2>
+<p class="text-text-muted text-sm font-medium tracking-[0.2em] mb-12 flex items-center gap-4 uppercase">
+                        PROJECT MANAGER / ENGINEER HYBRID 
+                        <span class="w-8 h-[1px] bg-border-default"></span> 
+                        KATHMANDU, NP
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary hover:bg-primary/90 text-background-dark font-bold px-8 py-5 rounded-lg transition-all flex items-center gap-3 group text-xs tracking-widest" href="#mission-briefing">
+<span>INITIATE MISSION BRIEFING</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="border border-border-default hover:bg-surface text-text-primary font-bold px-8 py-5 rounded-lg transition-all flex items-center text-xs tracking-widest" href="#dossier">
+                            VIEW DOSSIER
+                        </a>
+</div>
+</div>
+</section>
+<!-- Hero Image -->
+<div class="col-span-12 lg:col-span-4 aspect-[4/5] lg:aspect-auto bg-surface rounded-xl overflow-hidden border border-border-default relative group">
+<img alt="Abstract dark structural architectural patterns in Kathmandu" class="w-full h-full object-cover grayscale contrast-125 opacity-70 group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAgcGZ2X-Dv_4W94Js9V5VUDo98gA_DiOFtVe3FpInYtfNknCr743bj-tRk8kM9qE0I44tGhbI1B1tM0pIgLCIA8H__F3FPQoZefiHGumTcxX-JQ2BjHG6UTckXG7C9ySg891ayuKTL_K6T_A1Km-gB-b4zB9r188rEpKD2XZb9NC1R18W6SzECTrLfwM1sQvcReEPb2-eTWlqpT3rVdVQxWUWK2R-1oRaCn5_dPBKZQWZnX3P6qe4l7R4iYDzeS_8O2eWpNprIAo"/>
+<div class="absolute bottom-6 left-6 right-6">
+<div class="p-4 bg-background-dark/80 backdrop-blur-md border border-white/10 rounded-lg">
+<div class="flex items-center gap-3 mb-2">
+<span class="material-symbols-outlined text-primary text-sm">location_on</span>
+<span class="text-[10px] font-bold tracking-widest uppercase text-text-primary">Base: Kathmandu Sector</span>
+</div>
+<p class="text-[10px] text-text-secondary italic">
+                            Operating at the intersection of high-altitude logistics and modern engineering workflows.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Metrics Bar (Ember Metrics Edition Layout) -->
+<section class="col-span-12 mt-12 grid grid-cols-2 md:grid-cols-4 gap-px bg-border-default border border-border-default rounded-xl overflow-hidden">
+<div class="bg-surface p-8 flex flex-col items-center md:items-start text-center md:text-left">
+<span class="text-3xl md:text-4xl font-bold text-primary mb-1">10+</span>
+<span class="text-[10px] font-bold tracking-[0.2em] text-text-muted uppercase">Years Experience</span>
+</div>
+<div class="bg-surface p-8 flex flex-col items-center md:items-start text-center md:text-left">
+<span class="text-3xl md:text-4xl font-bold text-primary mb-1">25+</span>
+<span class="text-[10px] font-bold tracking-[0.2em] text-text-muted uppercase">Products Shipped</span>
+</div>
+<div class="bg-surface p-8 flex flex-col items-center md:items-start text-center md:text-left">
+<span class="text-3xl md:text-4xl font-bold text-primary mb-1">50+</span>
+<span class="text-[10px] font-bold tracking-[0.2em] text-text-muted uppercase">Engineers Managed</span>
+</div>
+<div class="bg-surface p-8 flex flex-col items-center md:items-start text-center md:text-left">
+<span class="text-3xl md:text-4xl font-bold text-primary mb-1">99.9%</span>
+<span class="text-[10px] font-bold tracking-[0.2em] text-text-muted uppercase">Uptime</span>
+</div>
+</section>
+<!-- Philosophy Section -->
+<div class="col-span-12 mt-12 pt-12 border-t border-border-default">
+<span class="text-[10px] font-bold tracking-[0.4em] text-primary uppercase block mb-12">Core Directives // Philosophy</span>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 bg-surface border border-border-default rounded-xl hover:border-primary/50 transition-colors">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">diversity_3</span>
+</div>
+<h3 class="text-xl font-bold mb-4 tracking-tight text-text-primary">Autonomy</h3>
+<p class="text-text-secondary leading-relaxed text-sm">
+                            I don't manage people; I manage environments. High-performing teams thrive when boundaries are clear and interference is zero.
+                        </p>
+</div>
+<div class="p-8 bg-surface border border-border-default rounded-xl hover:border-primary/50 transition-colors">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">shield</span>
+</div>
+<h3 class="text-xl font-bold mb-4 tracking-tight text-text-primary">Skin in the Game</h3>
+<p class="text-text-secondary leading-relaxed text-sm">
+                            Decision makers should suffer the consequences of their choices. I own the failures so the team can own the wins.
+                        </p>
+</div>
+<div class="p-8 bg-surface border border-border-default rounded-xl hover:border-primary/50 transition-colors">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-primary">target</span>
+</div>
+<h3 class="text-xl font-bold mb-4 tracking-tight text-text-primary">Mission Focused</h3>
+<p class="text-text-secondary leading-relaxed text-sm">
+                            If it doesn't move the needle, it's noise. I specialize in stripping away the non-essential until only the solution remains.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Dossier Section (Ordered after Core Directives) -->
+<section class="col-span-12 mt-12 pt-12 border-t border-border-default scroll-mt-24" id="dossier">
+<span class="text-[10px] font-bold tracking-[0.4em] text-primary uppercase block mb-12">Classified Records // Dossier</span>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Project 1 -->
+<div class="group flex flex-col bg-surface border border-border-default rounded-xl overflow-hidden hover:border-primary/50 transition-all">
+<div class="aspect-video bg-slate-800 relative overflow-hidden">
+<img alt="Project preview" class="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMEBq7jrngFp3WmMfCRbEEcb2K-t3t0OuLHYKX04-tlzS2ojxC7mkKzXRxw_i13FioFPtajfT0vzonAGqjnR9mc6QAKNAAWRBiNf5SIj4g5ASr0mo8KYxx3sYHpv4nVKuxF64qsuhCPTucdqwNzFdCZj1NDWu2OQfRgK-xXSMTzgs-vidbqVUhXjIG9rktM2SLCrtjllpEKNxdlrLUEbKkNb7iqb1O6yG1Gp1KnAkCs7ibewG0Kb-UPfb323li4s3nOfSGeIkALDg"/>
+<div class="absolute top-4 left-4">
+<span class="bg-background-dark/80 backdrop-blur-md text-[9px] font-bold tracking-widest text-primary px-2 py-1 border border-primary/30 rounded uppercase">PROJECT_ID: NEST_01</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-lg font-bold mb-2 tracking-tight text-text-primary">FinTech Infrastructure Pivot</h3>
+<p class="text-text-secondary text-xs leading-relaxed mb-4">
+                                Orchestrated the migration of legacy banking systems to a microservices architecture with zero downtime.
+                            </p>
+<div class="flex items-center justify-between pt-4 border-t border-border-default">
+<span class="text-[9px] font-bold tracking-widest text-text-secondary uppercase opacity-60">CLASSIFIED</span>
+<span class="material-symbols-outlined text-text-secondary text-sm group-hover:text-primary transition-colors">visibility</span>
+</div>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group flex flex-col bg-surface border border-border-default rounded-xl overflow-hidden hover:border-primary/50 transition-all">
+<div class="aspect-video bg-slate-800 relative overflow-hidden">
+<img alt="Project preview" class="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOgD5aNMCKmMDGln0vk9B8bYC4PxkSlxs2MBgRPzTMY_djshKsqantqhMA3O1O3RbRA1OyM2NGyiMt2hIEXSGmXLNrE3Ofo--I-3FkK6iocWpQp9UGYQbZE_BSBPC2BH1rFWTUqwJD2EJ4mjFOEpzoBJkSnDd-LVo068pGLWsz_xwqJ3hXjO0YUQIEgxU0EyZ7OXL7NrF5GSdKPGkMryVfKYbBeMtaGcyRooL400Lzjg6R-CMRiaaTCF0Xd0wDLcwgEcBiJHSpEWU"/>
+<div class="absolute top-4 left-4">
+<span class="bg-background-dark/80 backdrop-blur-md text-[9px] font-bold tracking-widest text-primary px-2 py-1 border border-primary/30 rounded uppercase">PROJECT_ID: SYNC_88</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-lg font-bold mb-2 tracking-tight text-text-primary">Global Ops Dashboard</h3>
+<p class="text-text-secondary text-xs leading-relaxed mb-4">
+                                Real-time monitoring system for distributed engineering teams across 4 continents.
+                            </p>
+<div class="flex items-center justify-between pt-4 border-t border-border-default">
+<span class="text-[9px] font-bold tracking-widest text-text-secondary uppercase opacity-60">INTERNAL_ONLY</span>
+<span class="material-symbols-outlined text-text-secondary text-sm group-hover:text-primary transition-colors">visibility</span>
+</div>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group flex flex-col bg-surface border border-border-default rounded-xl overflow-hidden hover:border-primary/50 transition-all">
+<div class="aspect-video bg-slate-800 relative overflow-hidden">
+<img alt="Project preview" class="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm8qXOc9dtiCIex7i2TXWxJb_WdqJC_GpKP-xeAVjw_qNAutZ4tBlc8RxOULkWjWjFcrBmqOgxr2xouvKR5nGqWuaiFBXwp9HzH2aNB4kZDBaHDq9U95QazBptNrThvGJH1_z9T4Qwyf06WDxwsZ63O9PCTWVcPdshHdfczrarkAF6fFLu_vXf2p_uOK83oc0Y3pmUIBOkBoIBJFQzEX4lUuACz78YYzo3NbyfL_Lt9QyywpJgnmIVxZYH_Hf4fEsAsdo-plPaXoM"/>
+<div class="absolute top-4 left-4">
+<span class="bg-background-dark/80 backdrop-blur-md text-[9px] font-bold tracking-widest text-primary px-2 py-1 border border-primary/30 rounded uppercase">PROJECT_ID: GRID_X</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-lg font-bold mb-2 tracking-tight text-text-primary">Automated QA Pipeline</h3>
+<p class="text-text-secondary text-xs leading-relaxed mb-4">
+                                Reduced deployment cycle time by 65% through custom-built CI/CD protocols.
+                            </p>
+<div class="flex items-center justify-between pt-4 border-t border-border-default">
+<span class="text-[9px] font-bold tracking-widest text-text-secondary uppercase opacity-60">DECRYPTED</span>
+<span class="material-symbols-outlined text-text-secondary text-sm group-hover:text-primary transition-colors">visibility</span>
+</div>
+</div>
+</div>
+<!-- Project 4 -->
+<div class="group flex flex-col bg-surface border border-border-default rounded-xl overflow-hidden hover:border-primary/50 transition-all">
+<div class="aspect-video bg-slate-800 relative overflow-hidden">
+<img alt="Project preview" class="w-full h-full object-cover opacity-50 grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHg1ocFVRwIvKWu0tCCNZmn_IYI-KTlYF_i_Mdx2eD2t-iUQ0zZaCrEVe09CjkS0BPNb3b_Wi8aCfPxBf58VpxeGT5jUfxvG_uUixbFFzoO-P7jvdy5GWe0m4jBn16oaHXLe4bvHvbYJbrAeoGNxCwaq1Jydf8H6X6nTEzUwsblZzU5M8RrCorevoOYtp59wWaBIIxUTQlsUiJGcvF9_EropfFvXFmU6PDg6d3cxhMfQjH7YaKChUJt6zlnMe-l8MizOPXUMi5jGc"/>
+<div class="absolute top-4 left-4">
+<span class="bg-background-dark/80 backdrop-blur-md text-[9px] font-bold tracking-widest text-primary px-2 py-1 border border-primary/30 rounded uppercase">PROJECT_ID: CORE_04</span>
+</div>
+</div>
+<div class="p-6">
+<h3 class="text-lg font-bold mb-2 tracking-tight text-text-primary">Product Strategy V.2025</h3>
+<p class="text-text-secondary text-xs leading-relaxed mb-4">
+                                Comprehensive roadmap for regional tech expansion in South Asian emerging markets.
+                            </p>
+<div class="flex items-center justify-between pt-4 border-t border-border-default">
+<span class="text-[9px] font-bold tracking-widest text-text-secondary uppercase opacity-60">CLASSIFIED</span>
+<span class="material-symbols-outlined text-text-secondary text-sm group-hover:text-primary transition-colors">visibility</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Mission Logs Section -->
+<section class="col-span-12 mt-12 pt-12 border-t border-border-default scroll-mt-24" id="mission-logs">
+<div class="flex items-center justify-between mb-12">
+<div>
+<span class="text-[10px] font-bold tracking-[0.4em] text-primary uppercase block mb-2">Internal Database</span>
+<h2 class="text-3xl font-bold tracking-tight text-text-primary uppercase">MISSION LOGS</h2>
+</div>
+<div class="flex items-center gap-4">
+<span class="text-[10px] font-mono text-text-muted uppercase tracking-widest">v4.0.2</span>
+<a class="text-[10px] font-bold tracking-widest uppercase text-text-muted hover:text-primary transition-colors flex items-center gap-2" href="#">
+                            DECRYPT ALL ENTRIES
+                            <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+<!-- Article 1 -->
+<article class="group relative p-8 bg-surface border border-border-default rounded-xl overflow-hidden hover:border-primary/50 transition-colors">
+<div class="flex flex-col h-full">
+<div class="flex items-center justify-between mb-6">
+<span class="text-[10px] font-bold tracking-widest text-primary uppercase">LOG_ID: 2024.08.12</span>
+<span class="text-[10px] font-bold tracking-widest text-text-muted uppercase">Status: Archived</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 tracking-tight text-text-primary group-hover:text-primary transition-colors">Optimizing Cross-Functional Throughput in Distributed Teams</h3>
+<p class="text-text-secondary leading-relaxed text-sm mb-8">
+                                An analysis of communication overhead in asynchronous environments and how we reduced sprint volatility by 40% through strict protocol adherence.
+                            </p>
+<div class="mt-auto flex items-center gap-4">
+<span class="text-[10px] font-bold text-text-muted uppercase">#ProcessEngineering</span>
+<span class="text-[10px] font-bold text-text-muted uppercase">#ProductOps</span>
+</div>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="group relative p-8 bg-surface border border-border-default rounded-xl overflow-hidden hover:border-primary/50 transition-colors">
+<div class="flex flex-col h-full">
+<div class="flex items-center justify-between mb-6">
+<span class="text-[10px] font-bold tracking-widest text-primary uppercase">LOG_ID: 2024.06.30</span>
+<span class="text-[10px] font-bold tracking-widest text-text-muted uppercase">Status: Archived</span>
+</div>
+<h3 class="text-2xl font-bold mb-4 tracking-tight text-text-primary group-hover:text-primary transition-colors">The Engineering Manager as a Resource Allocator</h3>
+<p class="text-text-secondary leading-relaxed text-sm mb-8">
+                                Diverging from traditional "leadership" toward a mathematical model of risk mitigation and technical debt management.
+                            </p>
+<div class="mt-auto flex items-center gap-4">
+<span class="text-[10px] font-bold text-text-muted uppercase">#Management</span>
+<span class="text-[10px] font-bold text-text-muted uppercase">#Architecture</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Mission Briefing Section (Integrated before Footer) -->
+<section class="col-span-12 mt-12 pt-12 border-t border-border-default scroll-mt-24" id="mission-briefing">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<!-- Left Content: Technical Briefing -->
+<div class="flex flex-col gap-8">
+<div class="space-y-4">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] text-primary">Secure Channel Active</span>
+</div>
+<h2 class="text-text-primary text-5xl md:text-6xl font-black leading-tight tracking-tighter uppercase">
+                                Initiate Mission <span class="text-primary">Briefing</span>
+</h2>
+<p class="text-text-secondary text-lg font-normal leading-relaxed max-w-md">
+                                Establish encrypted communication for strategic partnerships, technological inquiries, or tactical deployment requests.
+                            </p>
+</div>
+<div class="border-t border-border-default pt-8 flex flex-col gap-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-text-muted">Base Sector</p>
+<p class="text-text-primary">Kathmandu, Nepal</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">terminal</span>
+<div>
+<p class="text-xs font-bold uppercase tracking-widest text-text-muted">Signal Frequency</p>
+<p class="text-text-primary">birendra@mission.tech</p>
+</div>
+</div>
+</div>
+<!-- System Visual Element -->
+<div class="hidden lg:block relative h-32 w-full rounded-xl bg-surface border border-border-default overflow-hidden">
+<div class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_50%_50%,#E89259_0%,transparent_70%)]"></div>
+<div class="p-4 flex flex-col justify-between h-full">
+<div class="flex justify-between items-start">
+<span class="text-[10px] font-mono text-text-muted uppercase tracking-tighter">System Diagnostic: Optimal</span>
+<span class="text-[10px] font-mono text-text-muted uppercase tracking-tighter">ID: BW-01</span>
+</div>
+<div class="flex gap-1">
+<div class="h-1 flex-1 bg-primary/40 rounded-full"></div>
+<div class="h-1 flex-1 bg-primary/40 rounded-full"></div>
+<div class="h-1 flex-1 bg-primary/40 rounded-full"></div>
+<div class="h-1 flex-1 bg-primary rounded-full"></div>
+<div class="h-1 flex-1 bg-white/10 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Content: Contact Form -->
+<div class="bg-surface p-8 md:p-10 rounded-xl border border-border-default shadow-2xl backdrop-blur-sm relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-5">
+<span class="material-symbols-outlined text-6xl text-primary">qr_code_2</span>
+</div>
+<form class="flex flex-col gap-6 relative z-10">
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-text-muted">Identification (Name)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-text-muted text-sm">person</span>
+<input class="w-full bg-background-dark/50 border-border-default focus:border-primary focus:ring-1 focus:ring-primary rounded-lg pl-12 pr-4 py-4 text-sm text-text-primary placeholder:text-text-muted/30 transition-all" placeholder="Specify full name..." type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-text-muted">Digital Address (Email)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-text-muted text-sm">alternate_email</span>
+<input class="w-full bg-background-dark/50 border-border-default focus:border-primary focus:ring-1 focus:ring-primary rounded-lg pl-12 pr-4 py-4 text-sm text-text-primary placeholder:text-text-muted/30 transition-all" placeholder="name@network.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-text-muted">Mission Parameters (Message)</label>
+<div class="relative">
+<textarea class="w-full bg-background-dark/50 border-border-default focus:border-primary focus:ring-1 focus:ring-primary rounded-lg p-4 text-sm text-text-primary placeholder:text-text-muted/30 transition-all resize-none" placeholder="Provide intel or inquiry details..." rows="5"></textarea>
+</div>
+</div>
+<button class="group relative flex w-full items-center justify-center gap-3 bg-primary hover:bg-primary/90 text-background-dark font-bold py-5 rounded-lg transition-all shadow-lg shadow-primary/20" type="submit">
+<span class="uppercase tracking-[0.2em] text-xs">Transmit Signal</span>
+<span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
+</button>
+<p class="text-center text-[8px] font-mono text-text-muted uppercase tracking-widest">
+                                Encryption: AES-256 Enabled
+                            </p>
+</form>
+</div>
+</div>
+</section>
+</div>
+</main>
+<footer class="mt-20 border-t border-border-default bg-surface/30">
+<div class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start">
+<span class="text-[10px] font-bold tracking-[0.3em] text-text-muted uppercase mb-2">Secure Connection Established</span>
+<p class="text-[10px] text-text-muted">© 2024 BIRENDRA // PROJECT INTEL // ALL RIGHTS RESERVED</p>
+</div>
+<div class="flex gap-8">
+<a class="text-text-muted hover:text-primary transition-colors" href="#">
+<span class="text-[9px] font-bold tracking-widest uppercase">LinkedIn</span>
+</a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#">
+<span class="text-[9px] font-bold tracking-widest uppercase">GitHub</span>
+</a>
+<a class="text-text-muted hover:text-primary transition-colors" href="#">
+<span class="text-[9px] font-bold tracking-widest uppercase">Terminal</span>
+</a>
+</div>
+</div>
+</footer>
+<!-- Mobile-only fixed nav (Ember Edition Styled) -->
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-background-dark/95 backdrop-blur-md border-t border-border-default px-6 py-4 flex justify-between items-center z-[60]">
+<a class="text-text-muted hover:text-primary flex flex-col items-center gap-1 transition-colors" href="#">
+<span class="material-symbols-outlined text-xl">home</span>
+<span class="text-[9px] font-bold uppercase tracking-tighter">Ops</span>
+</a>
+<a class="text-text-muted hover:text-primary flex flex-col items-center gap-1 transition-colors" href="#dossier">
+<span class="material-symbols-outlined text-xl">folder_shared</span>
+<span class="text-[9px] font-bold uppercase tracking-tighter">Dossier</span>
+</a>
+<a class="text-text-muted hover:text-primary flex flex-col items-center gap-1 transition-colors" href="#mission-logs">
+<span class="material-symbols-outlined text-xl">terminal</span>
+<span class="text-[9px] font-bold uppercase tracking-tighter">Logs</span>
+</a>
+<a class="text-primary flex flex-col items-center gap-1" href="#mission-briefing">
+<span class="material-symbols-outlined font-variation-fill text-xl">alternate_email</span>
+<span class="text-[9px] font-bold uppercase tracking-tighter">Contact</span>
+</a>
+</nav>
+</body></html>
